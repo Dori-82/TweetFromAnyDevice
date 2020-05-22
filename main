@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+This is the documentation to change the source label from your tweets
+
+
+Requirments: Python IDE that can run the code such as Spyder 
+             on the console make sure you have tweepy,threading installed 
+             you can do this by doing pip install tweepy
+             pip install threading 
+
+Step 1: Create a app from the twitter dev page (app name is the src label)
+        Link: https://developer.twitter.com/en/apps
+        
+Step 2: Run below code and Enter tokens when prompted by the code below 
+
+Step 3: Input tweet on console display 
+
+Step 4: Enjoy !
+
+Note: Do not spam or keep running it as twitter might take action against it         
+
+@author: Meerxn
+"""
+
+
+import time
+import threading 
+import tweepy
+user = "@yourTwitterUsername"
+
+
+
+
+
+
+def tweet():
+	message=input("tweet: ")
+	tweepyInstance .update_status(message)
+
+
+print("Consumer Api keys will be inputted here\n")
+apiKey = input('Enter the API key on your keys and tokens section')
+secretApi = input('Enter secret API key')
+accToken = input('Enter your access token')
+accSecretToken = input('Enter secret access token')
+
+authorizer = tweepy.OAuthHandler(apiKey, secretApi)
+authorizer.set_access_token(accToken,accSecretToken)
+tweepyInstance = tweepy.API(auth)
+time.sleep(10)
+if __name__ == "__main__":
+    while 1:
+        tweet()
