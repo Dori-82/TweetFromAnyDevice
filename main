@@ -47,7 +47,7 @@ accSecretToken = input('Enter secret access token')
 
 authorizer = tweepy.OAuthHandler(apiKey, secretApi)
 authorizer.set_access_token(accToken,accSecretToken)
-tweepyInstance = tweepy.API(auth)
+tweepyInstance = tweepy.API(authorizer)
 time.sleep(10)
 if __name__ == "__main__":
     while 1:
